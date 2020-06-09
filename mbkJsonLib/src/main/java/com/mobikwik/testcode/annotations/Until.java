@@ -45,10 +45,10 @@ import java.lang.annotation.Target;
  * }
  * </pre>
  *
- * <p>If you created Mobikwik with {@code new Mobikwik()}, the {@code toJson()} and {@code fromJson()}
+ * <p>If you created Mobikwik with {@code new Mobikwik()}, the {@code stringToJson()} and {@code fromJson()}
  * methods will use all the fields for serialization and deserialization. However, if you created
  * Mobikwik with {@code Mobikwik Mobikwik = new MobikwikBuilder().setVersion(1.2).create()} then the
- * {@code toJson()} and {@code fromJson()} methods of Mobikwik will exclude the {@code emailAddress}
+ * {@code stringToJson()} and {@code fromJson()} methods of Mobikwik will exclude the {@code emailAddress}
  * and {@code password} fields from the example above, because the version number passed to the 
  * MobikwikBuilder, {@code 1.2}, exceeds the version number set on the {@code Until} annotation,
  * {@code 1.1}, for those fields.

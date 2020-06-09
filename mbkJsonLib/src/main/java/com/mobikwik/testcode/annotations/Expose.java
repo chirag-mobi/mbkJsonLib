@@ -42,11 +42,11 @@ import java.lang.annotation.Target;
  *   private String password;
  * }
  * </pre></p>
- * If you created Mobikwik with {@code new Mobikwik()}, the {@code toJson()} and {@code fromJson()}
+ * If you created Mobikwik with {@code new Mobikwik()}, the {@code stringToJson()} and {@code fromJson()}
  * methods will use the {@code password} field along-with {@code firstName}, {@code lastName},
  * and {@code emailAddress} for serialization and deserialization. However, if you created Mobikwik
  * with {@code Mobikwik Mobikwik = new MobikwikBuilder().excludeFieldsWithoutExposeAnnotation().create()}
- * then the {@code toJson()} and {@code fromJson()} methods of Mobikwik will exclude the
+ * then the {@code stringToJson()} and {@code fromJson()} methods of Mobikwik will exclude the
  * {@code password} field. This is because the {@code password} field is not marked with the
  * {@code @Expose} annotation. Mobikwik will also exclude {@code lastName} and {@code emailAddress}
  * from serialization since {@code serialize} is set to {@code false}. Similarly, Mobikwik will

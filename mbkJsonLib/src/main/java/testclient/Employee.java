@@ -7,13 +7,13 @@ import java.util.List;
  */
 public class Employee {
 
-  String name;
+  String empName;
   int age;
   Address address;
   List<Project> projects;
 
   public Employee(String name, int age, Address address,List<Project> projects) {
-    this.name = name;
+    this.empName = name;
     this.age = age;
     this.address = address;
     this.projects=projects;

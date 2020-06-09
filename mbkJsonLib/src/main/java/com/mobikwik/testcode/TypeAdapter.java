@@ -109,7 +109,7 @@ import java.io.Writer;
 //
 //   Graph graph = new Graph(...);
 //   TypeAdapter<Graph> graphAdapter = Mobikwik.getAdapter(Graph.class);
-//   String json = graphAdapter.toJson(graph);
+//   String json = graphAdapter.stringToJson(graph);
 // }</pre>
 //
 // <p>Type adapters are <strong>type-specific</strong>. For example, a {@code
@@ -128,7 +128,7 @@ public abstract class TypeAdapter<T> {
 
   /**
    * Converts {@code value} to a JSON document and writes it to {@code out}.
-   * Unlike Mobikwik's similar {@link Mobikwik#toJson(JsonElement, Appendable) toJson}
+   * Unlike Mobikwik's similar {@link Mobikwik#stringToJson(JsonElement, Appendable) stringToJson}
    * method, this write is strict. Create a {@link
    * JsonWriter#setLenient(boolean) lenient} {@code JsonWriter} and call
    * {@link #write(JsonWriter, Object)} for lenient
@@ -203,7 +203,7 @@ public abstract class TypeAdapter<T> {
 
   /**
    * Converts {@code value} to a JSON document. Unlike Mobikwik's similar {@link
-   * Mobikwik#toJson(Object) toJson} method, this write is strict. Create a {@link
+   * Mobikwik#stringToJson(Object) stringToJson} method, this write is strict. Create a {@link
    * JsonWriter#setLenient(boolean) lenient} {@code JsonWriter} and call
    * {@link #write(JsonWriter, Object)} for lenient
    * writing.

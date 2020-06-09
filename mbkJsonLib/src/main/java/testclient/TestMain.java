@@ -11,12 +11,12 @@ public class TestMain {
 
   public static void main(String[] args) {
     Mobikwik g = new Mobikwik();
-    Address address=new Address("Gurgaon",123456,"golf course road");
+    Address address=new Address("Gurgaon",123456,"street 23");
     List<Project> projects=new ArrayList();
     projects.add(new Project("Insurance",123));
     projects.add(new Project("Recharge",456));
-    Employee employee=new Employee("chirag",30,address,projects);
-    System.out.println(g.toJson(employee));
+    Employee employee=new Employee("sumit",30,address,projects);
+    System.out.println(g.stringToJson(employee));
   }
 
 }

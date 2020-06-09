@@ -55,7 +55,7 @@ import java.lang.annotation.Target;
  * <pre>
  * MyClass target = new MyClass("v1", "v2", "v3");
  * Mobikwik Mobikwik = new Mobikwik();
- * String json = Mobikwik.toJson(target);
+ * String json = Mobikwik.stringToJson(target);
  * System.out.println(json);
  *
  * ===== OUTPUT =====
