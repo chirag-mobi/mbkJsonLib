@@ -1,0 +1,15 @@
+Bundle-SymbolicName: com.google.Mobikwik
+Bundle-Name: ${project.name}
+Bundle-Description: ${project.description}
+Bundle-Vendor: Google Mobikwik Project
+Bundle-ContactAddress: ${project.parent.url}
+Bundle-RequiredExecutionEnvironment: JavaSE-1.6, JavaSE-1.7, JavaSE-1.8
+Require-Capability: osgi.ee;filter:="(&(osgi.ee=JavaSE)(version=1.6))"
+
+-removeheaders: Private-Package
+
+-exportcontents:\
+    com.google.Mobikwik,\
+    com.google.Mobikwik.annotations,\
+    com.google.Mobikwik.reflect,\
+    com.google.Mobikwik.stream
